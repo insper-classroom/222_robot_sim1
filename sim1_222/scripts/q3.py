@@ -6,7 +6,6 @@
 
 
 from __future__ import print_function, division
-import auxiliar
 import rospy
 import numpy as np
 import math
@@ -21,6 +20,7 @@ from nav_msgs.msg import Odometry
 
 
 if __name__=="__main__":
+    print("Iniciando o node...")
     rospy.init_node("Q3")
 
     velocidade_saida = rospy.Publisher("/cmd_vel", Twist, queue_size = 1)
